@@ -6,6 +6,16 @@ A full-stack Industrial IoT machine monitoring dashboard built with **Node.js + 
 
 ---
 
+## 🌐 Live Deployment
+
+- **Frontend (Vercel):** https://iiot-machine.vercel.app
+- **Backend API (Render):** https://iiot-machine-dashboard.onrender.com/api/machines
+- **Database:** MongoDB Atlas
+
+*(Note: Render's free tier may take ~30 seconds to wake up on the first request after inactivity.)*
+
+---
+
 ## 📁 Project Structure
 
 ```
