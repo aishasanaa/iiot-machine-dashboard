@@ -128,5 +128,5 @@ Frontend runs on **http://localhost:3000**
 2. **Authentication** — Add JWT-based login so only authorized plant supervisors can acknowledge faults.
 3. **Unit & integration tests** — Add Jest + React Testing Library for components/Redux thunks and Supertest for API endpoints.
 4. **Charts & history** — Show temperature/vibration trend charts per machine using Recharts, with a time-series log of status changes.
-5. **Cloud deployment** — Deploy backend to Railway/Render and frontend to Vercel, with MongoDB Atlas as the cloud database.
+5. **Alert thresholds & notifications** — Add configurable temperature/vibration thresholds that automatically trigger fault alerts and email/push notifications for supervisors.
 
