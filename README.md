@@ -46,7 +46,7 @@ iiot-machine-dashboard/
 
 ---
 
-## 🚀 Setup & Run Instructions
+##  Setup & Run Instructions
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) v18+
