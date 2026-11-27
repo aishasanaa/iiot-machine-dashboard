@@ -108,7 +108,7 @@ Frontend runs on **http://localhost:3000**
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Dashboard** — card grid showing all machines with live status
 -  **Color-coded status** — green (running), yellow (idle), red (fault)
@@ -122,7 +122,7 @@ Frontend runs on **http://localhost:3000**
 
 ---
 
-## 🛠️ What I'd Improve With More Time
+##  What I'd Improve With More Time
 
 1. **Real-time updates** — Use WebSockets (Socket.io) so the dashboard auto-refreshes when sensor data changes without manual polling.
 2. **Authentication** — Add JWT-based login so only authorized plant supervisors can acknowledge faults.
