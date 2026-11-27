@@ -1,5 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
+const API_BASE = import.meta.env.VITE_API_URL || '';
+
 // ── Async Thunks ──────────────────────────────────────────────────────────────
 
 // Fetch all machines from the backend
@@ -7,7 +9,7 @@ export const fetchMachines = createAsyncThunk(
   'machines/fetchAll',
   async (_, { rejectWithValue }) => {
     try {
-      const res = await fetch('/api/machines');
+      const res = await fetch(`${API_BASE}/api/machines`);
       if (!res.ok) throw new Error('Failed to fetch machines');
       return await res.json();
     } catch (err) {
@@ -21,7 +23,7 @@ export const acknowledgeFault = createAsyncThunk(
   'machines/acknowledgeFault',
   async (machineId, { rejectWithValue }) => {
     try {
-      const res = await fetch(`/api/machines/${machineId}/status`, {
+      const res = await fetch(`${API_BASE}/api/machines/${machineId}/status`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: 'idle' }),
