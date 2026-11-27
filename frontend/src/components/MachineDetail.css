@@ -1,8 +1,8 @@
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
+  background: rgba(3, 7, 18, 0.75);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,13 +11,13 @@
 }
 
 .modal {
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(17, 27, 54, 0.96), rgba(10, 17, 38, 0.98));
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: 18px;
   padding: 28px;
   width: 100%;
   max-width: 460px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.65), 0 0 32px rgba(6, 182, 212, 0.12);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -37,37 +37,37 @@
 
 .modal__id {
   font-size: 0.75rem;
-  color: #94a3b8;
+  color: #7dd3fc;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .modal__name {
   margin: 4px 0 0;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: #f8fafc;
 }
 
 .modal__close {
-  background: none;
-  border: none;
-  font-size: 1.1rem;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  font-size: 1rem;
   cursor: pointer;
   color: #94a3b8;
-  padding: 4px 8px;
-  border-radius: 6px;
+  padding: 5px 10px;
+  border-radius: 8px;
   transition: background 0.15s, color 0.15s;
 }
 
-.modal__close:hover { background: #334155; color: #f8fafc; }
+.modal__close:hover { background: rgba(56, 189, 248, 0.2); color: #f8fafc; }
 
 .modal__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid #334155;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.12);
 }
 
 .modal__label {
@@ -86,14 +86,18 @@
   margin-top: 8px;
   width: 100%;
   padding: 12px;
-  background: #dc2626;
+  background: linear-gradient(135deg, #e11d48, #f43f5e);
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s;
+  box-shadow: 0 0 20px rgba(244, 63, 94, 0.35);
+  transition: opacity 0.2s, transform 0.15s;
 }
 
-.btn-acknowledge:hover { background: #b91c1c; }
+.btn-acknowledge:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}

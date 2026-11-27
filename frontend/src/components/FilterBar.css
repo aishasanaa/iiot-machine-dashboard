@@ -8,12 +8,13 @@
 
 .filter-bar__search {
   flex: 1;
-  min-width: 200px;
-  padding: 10px 14px;
-  background: #1e293b;
+  min-width: 220px;
+  padding: 11px 16px;
+  background: rgba(15, 23, 46, 0.78);
+  backdrop-filter: blur(12px);
   color: #f8fafc;
-  border: 1px solid #334155;
-  border-radius: 8px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 12px;
   font-size: 0.95rem;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
@@ -24,8 +25,8 @@
 }
 
 .filter-bar__search:focus {
-  border-color: #6366f1;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+  border-color: #22d3ee;
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.18);
 }
 
 .filter-bar__buttons {
@@ -35,28 +36,38 @@
 }
 
 .filter-btn {
-  padding: 8px 18px;
-  border: 1px solid #334155;
+  padding: 9px 18px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 600;
   cursor: pointer;
-  background: #1e293b;
+  background: rgba(15, 23, 46, 0.75);
   color: #cbd5e1;
   transition: all 0.2s;
 }
 
 .filter-btn:hover {
-  background: #334155;
+  background: rgba(56, 189, 248, 0.14);
   color: #f8fafc;
 }
 
 .filter-btn.active {
-  background: #6366f1;
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
   color: #fff;
-  border-color: #6366f1;
+  border-color: transparent;
+  box-shadow: 0 0 14px rgba(6, 182, 212, 0.4);
 }
 
-.filter-btn--running.active { background: #059669; border-color: #059669; }
-.filter-btn--idle.active    { background: #d97706; border-color: #d97706; }
-.filter-btn--fault.active   { background: #dc2626; border-color: #dc2626; }
+.filter-btn--running.active {
+  background: linear-gradient(135deg, #059669, #10b981);
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.4);
+}
+.filter-btn--idle.active {
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.4);
+}
+.filter-btn--fault.active {
+  background: linear-gradient(135deg, #e11d48, #f43f5e);
+  box-shadow: 0 0 14px rgba(244, 63, 94, 0.4);
+}
