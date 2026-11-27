@@ -110,15 +110,15 @@ Frontend runs on **http://localhost:3000**
 
 ## ✨ Features
 
-- 📊 **Dashboard** — card grid showing all machines with live status
-- 🟢🟡🔴 **Color-coded status** — green (running), yellow (idle), red (fault)
-- 🔍 **Search** — filter machines by name in real time
-- 🏷️ **Status filter** — filter by All / Running / Idle / Fault
-- 🖱️ **Detail modal** — click any card to see full machine details
-- ✅ **Acknowledge Fault** — one-click to resolve a fault (calls PATCH API, updates UI optimistically)
-- ⏳ **Loading & error states** — spinner on fetch, error message with retry button
-- 🗄️ **MongoDB** — persistent storage with Mongoose ODM
-- 📱 **Responsive** — works on mobile and desktop
+- **Dashboard** — card grid showing all machines with live status
+-  **Color-coded status** — green (running), yellow (idle), red (fault)
+- **Search** — filter machines by name in real time
+-  **Status filter** — filter by All / Running / Idle / Fault
+-  **Detail modal** — click any card to see full machine details
+-  **Acknowledge Fault** — one-click to resolve a fault (calls PATCH API, updates UI optimistically)
+-  **Loading & error states** — spinner on fetch, error message with retry button
+-  **MongoDB** — persistent storage with Mongoose ODM
+-  **Responsive** — works on mobile and desktop
 
 ---
 
