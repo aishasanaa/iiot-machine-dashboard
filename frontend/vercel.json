@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://iiot-machine-dashboard.onrender.com/api/$1"
+    }
+  ]
+}
